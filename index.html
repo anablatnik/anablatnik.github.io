@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "sl">
+<head>
+	<!--Dodaj še link do CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--Ikone-->
+	<link rel="stylesheet" href="/css/stil.css"> <!--CSS-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora"> <!--Pisava-->
+	<title>Računalniška varnost</title>
+</head>
+<body>
+   <header>
+		<div class="logotip_naslov">
+			<a href="index.html">
+			<img src="/slike/pravi_logotip.png" alt="Logotip" height="140px">
+			</a>
+			<h1>Računalniška varnost</h1>
+		</div>
+	</header>
+   <!--Dodaj še linke do podstrani---->
+   <nav class = "navigacija">
+		<ul>
+   			<li><a href="index.html">Domov</a></li>
+			<!--Podmeni za računalniško varnost-->
+			<li class="dropdown">
+				<button onclick="window.location.href='osnovno_o_racunalniski_varnosti.html'" class="dropbtn">Osnovno o računalniški varnosti</button> <!--Tudi klik na računalniško varnost pripelje do začetka podstrani-->
+				<div class="dropdown-content">
+					<a href="osnovno_o_racunalniski_varnosti.html#definicija">Kaj je računalniška varnost?</a>
+					<a href="osnovno_o_racunalniski_varnosti.html#pomen">Pomen računalniške varnosti</a>
+				</div>
+			</li>
+			<!--Podmeni za grožnje-->
+			<li class="dropdown">
+				<button onclick="window.location.href='groznje.html'" class="dropbtn">Grožnje</button>
+				<div class="dropdown-content">
+					<a href="groznje.html#vrste">Vrste groženj</a>
+					<a href="groznje.html#primeri">Znani primeri</a>
+				</div>
+			</li>
+			<!--Podmeni za zaščito-->
+			<li class="dropdown">
+				<button onclick="window.location.href='zascita.html'" class="dropbtn">Zaščita</button>
+				<div class="dropdown-content">
+					<a href="zascita.html#orodja">Orodja</a>
+					<a href="zascita.html#koraki">Temeljni koraki</a>
+				</div>
+			</li>
+			<!--Podmeni za etiko-->
+			<li><a href="etika.html">Etika</a></li>
+			<!--Meni za izobraževanje-->
+			<li><a href="izobrazevanje.html">Izobraževanje</a></li>
+			<!--Meni o projektu-->
+			<li><a href="o_projektu.html">O projektu</a></li>
+			<!--Meni viri-->
+			<li><a href="viri.html">Viri</a></li>
+		</ul>
+	</nav>
+	<main>
+	<div class="zacetna_slika_viri">
+	<img class="zacetna_slika" src="/slike/hacker.jpg" href="Heker" height="380px">
+	<div class="overlay_viri"><a href="https://www.cosvernauta.com/2016/09/hackeos-en-el-siglo-actual-y-seguridad_26.html">Hacker</a> © 2016 by <a href="https://creativecommons.org">Cosvernauta</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"></div>
+	</div>
+	<p>V ponedeljek zjutraj odprete e-pošto in zagledate sporočilo s pozivom k ponovni prijavi v spletno banko. <span style="color: #96d9ff; font-weight: bold;">KLIKNETE</span>. Vnesete podatke. Pet minut kasneje je vaš račun prazen.</p>
+	<p>Zveni kot zgodba iz filma?<br>
+		Ne, to je realnost, ki se dogaja dan za dnem.</p>
+	<p>Dobrodošli v svetu, kjer se lahko naučite več o računalniški varnosti, da boste čim manjkrat izpostavljeni zgoraj opisanim napadom.</p>
+	
+	<p class="Odstavek_pred_seznamom">Vprašanja, ki si jih v tej točki lahko postavimo so:</p>
+	<!--v CSS: margin = 0, zato da ne bo vmes razmika-->
+	<ul class="Alineje_index">
+		<li>Ste prepričani, da so vaša gesla varna?</li>
+		<li>Imate dvostopenjsko preverjanje za e-pošto ali uporabljate kar "isto geslo kot vedno"?</li>
+		<li>Bi prepoznali lažno e-pošto, če bi vam jo poslala "banka"?</li>
+	</ul>
+	<div class="Besedilo_pod_sliko"></div>
+	<div class="Okvir_zanimiva_dejstva">
+	<h3 class="Nekaj_zanimivega"><i class="far fa-lightbulb" style="margin-right: 10px; color: yellow"></i>Nekaj zanimivega ...</h3><!--dodana ikona-->
+	<!--pri vsakem dodaj še sliko-->
+
+	<div class="Slika_dejstva">
+	<img class="Slika_ob_dejstvu_leva" src="/slike/slika_ob_dejstvu_1.png" href="Najpogostejše geslo">
+	<p class="Odstavek_zraven_slike_leva">Po podatkih Nordpassa je bilo v letu 2024 najbolj uporabljeno geslo 123456. Prav tako je to geslo zasedlo najvišjo stopničko tudi v letih 2020 in 2022 (NordPass, b. d.).</p>
+	</div>
+
+	<div class="Slika_dejstva">
+	<p class="Odstavek_zraven_slike_desna">Ena napačna kliknjena povezava v lažnem e-mailu lahko pomeni popoln dostop do sistema. Ljudje smo največkrat tarča te vrste napadov (SI-CERT, b. d.). </p>
+	<img class="Slika_ob_dejstvu_desna" src="/slike/slika_ob_dejstvu_2.jpg" href="Lažen e-mail">	
+	</div>
+
+	<div class="Slika_dejstva">
+	<img class="Slika_ob_dejstvu_leva" src="/slike/slika_ob_dejstvu_3.png" href="Ura ponavljanja">
+	<p class="Odstavek_zraven_slike_leva">Po podatkih Databasixa se kibernetski napadi pojavljajo z zastrašujočo frekvenco vsakih 39 sekund (Databasix, b. d.). </p>
+	</div>
+
+	<div class="Slika_dejstva">
+	<p class="Odstavek_zraven_slike_desna">Kibernetski kriminalci vse pogosteje uporabljajo umetno inteligenco za izvajanje bolj izpopolnjenih in težko zaznavnih napadov (SOCIALTISS, b. d).</p>
+	<img class="Slika_ob_dejstvu_desna" src="/slike/slika_ob_dejstvu_4.jpg" href="Umetna inteligenca">
+	</div>
+
+	<div class="Slika_dejstva">
+	<img class="Slika_ob_dejstvu_leva" src="/slike/slika_ob_dejstvu_5.jpg" href="Posodobitev">
+	<p class="Odstavek_zraven_slike_leva">Najpogostejši vdor ni zaradi naprednih napadov, ampak zaradi klikov na napačne povezave, uporabe slabih gesel ali prezrte posodobitve. Hekerji pogosto ne vdirajo – oni so povabljeni (SI-CERT, b. d.). </p>
+	</div>
+
+	<div class="Slika_dejstva">
+	<p class="Odstavek_zraven_slike_desna">Tvoja spletna kamera se lahko vklopi – brez da bi vedel. Zato imajo nekateri ljudje trak čez kamero. Ne zato, ker so paranoični, ampak ker vedo, kako stvari delujejo (Brant, b. d.). </p>
+	<img class="Slika_ob_dejstvu_desna" src="/slike/slika_ob_dejstvu_6.jpg" href="Računalniška kamera">	
+	</div>
+
+	<div class="Slika_dejstva">
+	<img class="Slika_ob_dejstvu_leva" src="/slike/slika_ob_dejstvu_7.jpg" href="Antivirus">
+	<p class="Odstavek_zraven_slike_leva">Antivirusna zaščita je kot varnostni pas v avtu – pomaga, ampak če se zapodiš v steno, ti ne bo vedno pomagal. Prava varnost se začne s tvojim vedenjem (Telprom, b. d.). </p>
+	</div>
+
+	<div class="Slika_dejstva">
+	<p class="Odstavek_zraven_slike_desna">Ni dovolj, da imaš požarni zid in geslo. Varnost je navada: preverjanje povezav, sumničavost do nenavadnih sporočil, redne posodobitve. To je digitalna higiena (Mreža nevladnih organizacij za vključujočo informacijsko družbo, 2024).</p>
+	<img class="Slika_ob_dejstvu_desna" src="/slike/slika_ob_dejstvu_8.jpg" href="Požarni zid">	
+	</div>
+	<p style="text-align: center;">(Vsi slike so pridobljene iz Canve.)</p>
+	</div>
+
+</main>
+
+</body>
+<footer>
+	<!--Dodaj nogo-->
+	<p> © 2025 Ana Blatnik. Vse pravice pridržane.</p>
+</footer>
+</html>

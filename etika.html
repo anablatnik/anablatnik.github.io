@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "sl">
+<head>
+	<!--Dodaj še link do CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--Ikone-->
+	<link rel="stylesheet" href="/css/stil.css"> <!--CSS-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora"> <!--Pisava-->
+	<title>Računalniška varnost</title>
+</head>
+<body>
+   <header>
+		<div class="logotip_naslov">
+			<a href="index.html">
+			<img src="/slike/pravi_logotip.png" alt="Logotip" height="140px">
+			</a>
+			<h1>Računalniška varnost</h1>
+		</div>
+	</header>
+   <!--Dodaj še linke do podstrani---->
+   <nav class = "navigacija">
+		<ul>
+   			<li><a href="index.html">Domov</a></li>
+			<!--Podmeni za računalniško varnost-->
+			<li class="dropdown">
+				<button onclick="window.location.href='osnovno_o_racunalniski_varnosti.html'" class="dropbtn">Osnovno o računalniški varnosti</button> <!--Tudi klik na računalniško varnost pripelje do začetka podstrani-->
+				<div class="dropdown-content">
+					<a href="osnovno_o_racunalniski_varnosti.html#definicija">Kaj je računalniška varnost?</a>
+					<a href="osnovno_o_racunalniski_varnosti.html#pomen">Pomen računalniške varnosti</a>
+				</div>
+			</li>
+			<!--Podmeni za grožnje-->
+			<li class="dropdown">
+				<button onclick="window.location.href='groznje.html'" class="dropbtn">Grožnje</button>
+				<div class="dropdown-content">
+					<a href="groznje.html#vrste">Vrste groženj</a>
+					<a href="groznje.html#primeri">Znani primeri</a>
+				</div>
+			</li>
+			<!--Podmeni za zaščito-->
+			<li class="dropdown">
+				<button onclick="window.location.href='zascita.html'" class="dropbtn">Zaščita</button>
+				<div class="dropdown-content">
+					<a href="zascita.html#orodja">Orodja</a>
+					<a href="zascita.html#koraki">Temeljni koraki</a>
+				</div>
+			</li>
+			<!--Podmeni za etiko-->
+			<li><a href="etika.html">Etika</a></li>
+			<!--Meni za izobraževanje-->
+			<li><a href="izobrazevanje.html">Izobraževanje</a></li>
+			<!--Meni o projektu-->
+			<li><a href="o_projektu.html">O projektu</a></li>
+			<!--Meni viri-->
+			<li><a href="viri.html">Viri</a></li>
+		</ul>
+	</nav>
+<main>
+	<h2>Etika</h2>
+	<div class="zacetna_slika_viri">
+		<img class="zacetna_slika" src="/slike/etika_vrste_hekerjev.svg" alt="Hekerji" style="width: 650px">
+		<div class="overlay_viri"><a href="https://creativecommons.org">Vrste hekerjev</a> © 2025 by <a href="https://creativecommons.org">Ana Blatnik</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"></div>
+		</div>
+
+	<p>Ali je vedno narobe vdreti v računalniški sistem? Kaj pa če s tem preprečiš kibernetski napad?</p> 
+	<p>V današnjem digitalnem svetu imajo hekerji zelo pomembno vlogo - a niso vsi enaki. Večina ljudi ne pozna etičnih hekerjev; ko slišijo besedo "hekanje", takoj pomislijo 
+		na kriminalce. Vendar niso vsi hekerji slabi. Nekateri uporabljajo svoje znanje za zakonite dejavnosti.</p>
+	<p>Etika računalniške varnosti se ukvarja z vprašanjem, kdaj je hekanje sprejemljivo in kdaj ne.  Je prav, da nekdo vdira v sistem, če s tem odkrije napako in prepreči večjo 
+		škodo? Ali je to vedno kršitev zakonov?</p>
+	<p>V nadaljevanju bom predstavila tri glavne vrste hekerjev: etične, zlonamerne in sive. Razložila bom, kako se njihova dejanja razlikujejo z vidika etike, zakonitosti in 
+		vpliva na družbo. </p>
+
+
+	<div class="Več_stolpcev_osnovno_o_računalniški_varnosti"><!--Opisi vseh treh vrst hekerjev v kvadratkih-->
+		<div class="Posamezen_stolpec">
+		   <h4>BLACK - HAT (zlonamerni hekerji)</h4>
+		   <div class="Kvadrat_z_besedilom" style="height: 370px; width: 445px;">
+			<p>Zlonamerni hekerji vdrejo v sisteme brez dovoljenja lastnikov, iščejo ranljivosti, ki jih izkoristijo za nezakonite vdore.<br>
+			Njihov namen je prevara, škoda ali kraja. To pa naredijo tako, da pišejo škodljivo programsko opremo, izvajajo napade, kradejo gesla, osebne podatke in podatke o 
+			kreditnih karticah. Nato te podatke pogosto prodajo na temnem spletu (dark web).<br>
+			Pogosto izsiljujejo uporabnike z njihovimi osebnimi podatki, včasih škodujejo tudi ugledu podjetij (GeeksforGeeks, 2022).</p>
+		</div>
+		</div>
+		<div class="Posamezen_stolpec">
+		   <h4>WHITE - HAT (etični hekerji)</h4>
+		   <div class="Kvadrat_z_besedilom" style="height: 370px; width: 445px;">
+			<p>So certificirani strokovnjaki, ki se hekanja učijo na tečajih in šolah. Njihov cilj je varovati podatke in spletne strani.<br>
+			Vedno delujejo z dovoljenjem lastnikov sistemov.<br>
+			Njihove metode so podobne tistim, ki jih uporabljajo slabi hekerji, vendar jih uporabljajo na zakonit način.<br>
+			Pomagajo pa tudi pri ozaveščanju ljudi o spletnih grožnjah in zaščiti pred njimi (GeeksforGeeks, 2022).</p>
+		</div>
+		</div>
+		<div class="Posamezen_stolpec">
+		   <h4>GREY - HAT (etični hekerji)</h4>
+		   <div class="Kvadrat_z_besedilom" style="height: 370px; width: 445px">
+			<p>So nekje vmes med belimi in črnimi hekerji.<br>
+			Najdejo ranljivost brez dovoljenja, vendar niso zlonamerni. Čeprav nimajo slabih namenov, je njihovo delovanje še vedno nezakonito.<br>
+			Nikoli ne sodelujejo z zlonamernimi (Black-hat) hekerji.<br>
+			Organizacije jih pogosto ne cenijo, ker ne delujejo v skladu z uradnimi smernicami etičnega hekanja, vendar ne ogrožajo uporabnikov in ne povzročajo škode (GeeksforGeeks, 2022).</p>
+		</div>
+		</div>
+	 </div>
+
+</main>
+
+</body>
+<footer>
+	<!--Dodaj nogo-->
+	<p> © 2025 Ana Blatnik. Vse pravice pridržane.</p>
+</footer>
+</html>

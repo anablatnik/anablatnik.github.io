@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang = "sl">
+<head>
+	<!--Dodaj še link do CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--Ikone-->
+	<link rel="stylesheet" href="/css/stil.css"> <!--CSS-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora"> <!--Pisava-->
+	<title>Računalniška varnost</title>
+</head>
+<body>
+   <header>
+		<div class="logotip_naslov">
+			<a href="index.html">
+			<img src="/slike/pravi_logotip.png" alt="Logotip" height="140px">
+			</a>
+			<h1>Računalniška varnost</h1>
+		</div>
+	</header>
+   <!--Dodaj še linke do podstrani---->
+   <nav class = "navigacija">
+		<ul>
+   			<li><a href="index.html">Domov</a></li>
+			<!--Podmeni za računalniško varnost-->
+			<li class="dropdown">
+				<button onclick="window.location.href='osnovno_o_racunalniski_varnosti.html'" class="dropbtn">Osnovno o računalniški varnosti</button> <!--Tudi klik na računalniško varnost pripelje do začetka podstrani-->
+				<div class="dropdown-content">
+					<a href="osnovno_o_racunalniski_varnosti.html#definicija">Kaj je računalniška varnost?</a>
+					<a href="osnovno_o_racunalniski_varnosti.html#pomen">Pomen računalniške varnosti</a>
+				</div>
+			</li>
+			<!--Podmeni za grožnje-->
+			<li class="dropdown">
+				<button onclick="window.location.href='groznje.html'" class="dropbtn">Grožnje</button>
+				<div class="dropdown-content">
+					<a href="groznje.html#vrste">Vrste groženj</a>
+					<a href="groznje.html#primeri">Znani primeri</a>
+				</div>
+			</li>
+			<!--Podmeni za zaščito-->
+			<li class="dropdown">
+				<button onclick="window.location.href='zascita.html'" class="dropbtn">Zaščita</button>
+				<div class="dropdown-content">
+					<a href="zascita.html#orodja">Orodja</a>
+					<a href="zascita.html#koraki">Temeljni koraki</a>
+				</div>
+			</li>
+			<!--Podmeni za etiko-->
+			<li><a href="etika.html">Etika</a></li>
+			<!--Meni za izobraževanje-->
+			<li><a href="izobrazevanje.html">Izobraževanje</a></li>
+			<!--Meni o projektu-->
+			<li><a href="o_projektu.html">O projektu</a></li>
+			<!--Meni viri-->
+			<li><a href="viri.html">Viri</a></li>
+		</ul>
+	</nav>
+   <main>
+   <h2>Osnovno o računalniški varnosti</h2>
+   <p id="definicija" style="padding-top: 20px"></p><!--Da se prikaže naslov, ko klikneš na podmeniju-->
+   <h3 class="Prvi_naslov">Kaj je računalniška varnost?</h3>
+   <p>Računalniška varnost se nanaša na zaščito računalnikov in z njimi povezanih podatkov, omrežij, programske opreme, strojne opreme 
+      pred nepooblaščenim dostopom, zlorabo, krajo, izgubo informacij in drugimi varnostnimi težavami. Poznamo več vrst računalniške varnosti:</p>
+      <div class="Več_stolpcev_osnovno_o_računalniški_varnosti"> <!--Vsaka posamezna podskupina v svojem kvadratu-->
+         <div class="Posamezen_stolpec">
+            <h4>KIBERNETSKA VARNOST</h4>
+            <div class="Kvadrat_z_besedilom">
+            <p>Zaščita naših računalnikov, elektronskih naprav, omrežij, programov ali sistemov pred kibernetskimi napadi. To so napadi, ki se zgodijo, ko je naš sistem povezan z internetom.</p>
+         </div>
+         </div>
+         <div class="Posamezen_stolpec">
+            <h4>INFORMACIJSKA VARNOST</h4>
+            <div class="Kvadrat_z_besedilom">
+            <p>Zaščita podatkov našega sistema pred krajo, nezakonito uporabo in piratstvom pred nepooblaščeno uporabo. Informacijska varnost ima predvsem tri cilje: zaupnost, celovitost in razpoložljivost informacij.</p>
+         </div>
+         </div>
+         <div class="Posamezen_stolpec">
+            <h4>VARNOST APLIKACIJ</h4>
+            <div class="Kvadrat_z_besedilom">
+            <p>Zaščita naših aplikacij in podatkov, da ne pride do vdora, tudi baze podatkov aplikacij ostanejo varne in zaupne za samega lastnika, tako da podatki uporabnika ostanejo zaupni.</p>
+         </div>
+         </div>
+         <div class="Posamezen_stolpec">
+            <h4>VARNOST OMREŽJA</h4>
+            <div class="Kvadrat_z_besedilom">
+            <p>Zaščita osnovne omrežne infrastrukture pred nepooblaščenim dostopom, zlorabo ali krajo. Vključuje ustvarjanje varne infrastrukture za naprave, aplikacije, uporabnike in aplikacije, ki delujejo na varen način.</p>
+         </div>
+         </div>
+      </div>
+	  <p>(GeeksforGeeks, 2023)</p>
+	  <p id="pomen"></p>
+      <h3>Pomen računalniške varnosti</h3>
+      <p>S hitrim napredkom tehnologije in naraščajočo medsebojno povezanostjo naprav, je potreba po zanesljivih ukrepih za računalniško varnost bolj nujna kot kdaj koli prej. Računalniška varnost ni le preventivni ukrep, temveč 
+         nujnost pri varovanju občutljivih informacij in ohranjanju zaupanja v digitalno okolje.</p>
+      <p>Eden najpomembnejših vidikov računalniške varnosti je zaščita osebnih podatkov. Varnost pa je pomembna tudi pri preprečevanju kraje identitete, zaščiti finančnih transakcij, zaščiti pred izsiljevalsko programsko opremo, skrbi za nacionalno varnost, ... (Inštitut za podatke, b. d.).</p>
+   
+</main>
+</body>
+<footer>
+	<!--Dodaj nogo-->
+	<p> © 2025 Ana Blatnik. Vse pravice pridržane.</p>
+</footer>
+</html>
