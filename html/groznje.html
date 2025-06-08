@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang = "sl">
+<head>
+	<!--Dodaj še link do CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--Ikone-->
+	<link rel="stylesheet" href="/css/stil.css"> <!--CSS-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora"> <!--Pisava-->
+	<title>Računalniška varnost</title>
+</head>
+<body>
+   <header>
+		<div class="logotip_naslov">
+			<a href="index.html">
+			<img src="/slike/pravi_logotip.png" alt="Logotip" height="140px">
+			</a>
+			<h1>Računalniška varnost</h1>
+		</div>
+	</header>
+   <!--Dodaj še linke do podstrani---->
+   <nav class = "navigacija">
+		<ul>
+   			<li><a href="index.html">Domov</a></li>
+			<!--Podmeni za računalniško varnost-->
+			<li class="dropdown">
+				<button onclick="window.location.href='osnovno_o_racunalniski_varnosti.html'" class="dropbtn">Osnovno o računalniški varnosti</button> <!--Tudi klik na računalniško varnost pripelje do začetka podstrani-->
+				<div class="dropdown-content">
+					<a href="osnovno_o_racunalniski_varnosti.html#definicija">Kaj je računalniška varnost?</a>
+					<a href="osnovno_o_racunalniski_varnosti.html#pomen">Pomen računalniške varnosti</a>
+				</div>
+			</li>
+			<!--Podmeni za grožnje-->
+			<li class="dropdown">
+				<button onclick="window.location.href='groznje.html'" class="dropbtn">Grožnje</button>
+				<div class="dropdown-content">
+					<a href="groznje.html#vrste">Vrste groženj</a>
+					<a href="groznje.html#primeri">Znani primeri</a>
+				</div>
+			</li>
+			<!--Podmeni za zaščito-->
+			<li class="dropdown">
+				<button onclick="window.location.href='zascita.html'" class="dropbtn">Zaščita</button>
+				<div class="dropdown-content">
+					<a href="zascita.html#orodja">Orodja</a>
+					<a href="zascita.html#koraki">Temeljni koraki</a>
+				</div>
+			</li>
+			<!--Podmeni za etiko-->
+			<li><a href="etika.html">Etika</a></li>
+			<!--Meni za izobraževanje-->
+			<li><a href="izobrazevanje.html">Izobraževanje</a></li>
+			<!--Meni o projektu-->
+			<li><a href="o_projektu.html">O projektu</a></li>
+			<!--Meni viri-->
+			<li><a href="viri.html">Viri</a></li>
+		</ul>
+	</nav>
+	<main>
+	<h2>Grožnje</h2>
+		<p>Kaj je grožnja v digitalnem svetu? To ni vedno virus ali heker s kapuco. Včasih je to lažna aplikacija. Drugič sumljiv Wi-Fi v kavarni. Tretjič pa lastna nepazljivost. 
+   		Grožnje lahko prihajajo v vseh oblikah.</p>
+	<p id="vrste" style="padding-top: 20px;"></p>
+	<h3 class="Prvi_naslov">Vrste groženj</h3>
+		<p>V svetu računalniške varnosti obstaja širok spekter groženj, ki lahko vplivajo na sisteme, omrežja in podatke. Te grožnje so lahko različnih vrst in obsegov, od zlonamerne
+   			programske opreme (malware) do napadov na omrežja in fizičnih napadov na računalniške sisteme.</p>
+		<p>Na spodnjih slikah so prikazane nekatere izmed glavnih groženj. Več o njih pa izveste, če se z miško pomaknete nad sliko.</p>
+		<!--Ko greš z miško čez kvadrat, se ti pokaže opis posamezne grožnje-->
+			<div class="Slike_overlay">
+			<div class="Kvadrat_s_sliko">
+				<img src="/slike/G_Malware.jpg" alt="Malware" class="Slika_z_napisom">
+				<div class="overlay">
+					<div class="Tekst_čez_sliko"><p class="Naslov_groznje">MALWARE</p>
+						Zlonamerna programska oprema je vsak program ali koda, ki je ustvarjena z namenom škodovanja računalniku, omrežju ali strežniku. Je najpogostejša vrsta kibernetskega 
+						napada. Pod njo med drugim uvrščamo tudi naslednjih šest podskupin (CrowdStrike, b. d.).</div>
+				</div>
+			</div>
+			<div class="Kvadrat_s_sliko">
+				<img src="/slike/G_Virus.jpg" alt="Virus" class="Slika_z_napisom">
+				<div class="overlay">
+					<div class="Tekst_čez_sliko"><p class="Naslov_groznje">VIRUS</p>
+						Računalniški virus želi motiti sisteme, povzročiti velike operativne težave in povzročiti izgubo in uhajanje podatkov. Zasnovan je tako, da se širi po programih in sistemih.
+						Običajno se pritrdi na izvedljivo gostiteljsko datoteko, kar povzroči, da se njegove virusne kode izvedejo, ko je datoteka odprta. Koda se nato razširi iz dokumenta ali programske opreme, 
+						na katero je priključena, prek omrežij, pogonov, programov za izmenjavo datotek ali okuženih e-poštnih prilog (CrowdStrike, b. d.).</div>
+				</div>
+			</div>
+			<div class="Kvadrat_s_sliko">
+				<img src="/slike/G_Trojanski_konj.jpg" alt="Trojanski konj" class="Slika_z_napisom">
+				<div class="overlay">
+					<div class="Tekst_čez_sliko"><p class="Naslov_groznje">TROJANSKI KONJ</p>
+						Ta zlonamerna programska oprema se pretvarja, da je zakonit program (npr. del operacijskega sistema ali nenevarna datoteka, kot so brezplačni prenosi). Običajno se namesti s pomočjo tehnik 
+						socialnega inženiringa, kot sta phishing ali zavajajoče spletne strani (CrowdStrike, b. d.).</div>
+				</div>
+			</div>
+			<div class="Kvadrat_s_sliko">
+				<img src="/slike/G_Spyware.jpg" alt="Spyware" class="Slika_z_napisom">
+				<div class="overlay">
+					<div class="Tekst_čez_sliko"><p class="Naslov_groznje">SPYWARE</p>
+						Vohunska programska oprema je vrsta nezaželene zlonamerne programske opreme, ki okuži računalnik ali drugo napravo in zbira podatke o uporabnikovi spletni dejavnosti brez njegove vednosti ali soglasje (CrowdStrike, b. d.).</div>
+				</div>
+			</div>
+			<div class="Kvadrat_s_sliko">
+				<img src="/slike/G_Črv.jpg" alt="Črv" class="Slika_z_napisom">
+				<div class="overlay">
+					<div class="Tekst_čez_sliko"><p class="Naslov_groznje">ČRV</p>
+						Samostojen program, ki se razmnožuje in širi svoje kopije na druge računalnike. Črv lahko okuži svojo tarčo prek varnostne ranljivosti v programski opremi ali pa pride do nje prek phishinga. 
+						Vgrajeni črvi lahko spremnijajo in brišejo datoteke, dodajo več zlonamerne programske opreme ali pa se razmnožujejo, dokler ciljnemu sistemu ne zmanjka virov (CrowdStrike, b. d.).</div>
+				</div>
+			</div>
+			<div class="Kvadrat_s_sliko">
+				<img src="/slike/G_Adware.jpg" alt="Adware" class="Slika_z_napisom">
+				<div class="overlay">
+					<div class="Tekst_čez_sliko"><p class="Naslov_groznje">ADWARE</p>
+						Oglaševalska programska oprema je vrsta spywarea, ki spremlja uporabnikovo spletno dejavnost, da bi ugotovila, katere oglase naj jim prikaže. Čeprav adware sama po sebi ni zlonamerna, 
+						vpliva na učinkovitost delovanja uporabnikove naprave in poslabša uporabniško izkušnjo (CrowdStrike, b. d.).</div>
+				</div>
+			</div>
+			<div class="Kvadrat_s_sliko">
+				<img src="/slike/G_Ransomware.jpg" alt="Ransomware" class="Slika_z_napisom">
+				<div class="overlay">
+					<div class="Tekst_čez_sliko"><p class="Naslov_groznje">RANSOMWARE</p>
+						V napadu z izsiljevalsko programsko opremo nasprotnik zakodira podatke žrtve in ponudi dekripcijski ključ v zameno za plačilo. Napadi se običajno sprožijo preko zlonamernih 
+						povezav, dostavljenih preko lažnih e-poštnih sporočil, vendar se uporabljajo tudi nepopravljene ranljivosti in napačne nastavitve varnostnih pravil (CrowdStrike, b. d.).</div>
+				</div>
+			</div>
+			<div class="Kvadrat_s_sliko">
+				<img src="/slike/G_Phishing.jpg" alt="Phishing" class="Slika_z_napisom">
+				<div class="overlay">
+					<div class="Tekst_čez_sliko"><p class="Naslov_groznje">PHISHING</p>
+						Tudi lažno predstavljanje, je vrsta kibernetskega napada, ki uporablja e-pošto, SMS, telefon, družabna omrežja in tehnike socialnega inženiringa, da žrtev prepriča, da razkrije občutljive 
+						podatke (gesla, številke računov, ...) ali da prenese zlonamerno datoteko, ki bo namestila viruse v računalnik ali telefon. Poznamo različne oblike phishinga, od takih, ki ciljajo na posameznike 
+						z zelo osebnimi sporočili, do tistih, ki z lažno podporo ali lažnimi spletnimi stranmi skušajo pridobiti zaupne podatke (Spear Phishing, Whaling, SMIShing, Vishing, ...) (CrowdStrike, b. d.).</div>
+				</div>
+			</div>
+			<div class="Kvadrat_s_sliko">
+				<img src="/slike/G_DDoS.jpg" alt="DDoS" class="Slika_z_napisom">
+				<div class="overlay">
+					<div class="Tekst_čez_sliko"><p class="Naslov_groznje">DoS in DDoS</p>
+						DoS oz. napad z zavrnitvijo storitve je ciljno usmerjen napad, ki preplavi omrežje z lažnimi zahtevami, da bi motili poslovanje. V tem napadu uporabniki ne morejo izvajati vsakdanjih in nujnih 
+						nalog, kot je dostop do e-pošte, spletnih mest, spletnih računov, ... Večina teh napadov ne povzroči izgube podatkov in se običajno reši brez plačila odkupnine.<br>
+						Razlika med DoS in DDoS pa je v izvoru napada. Prvi izvira iz samo enega sistema, medtem ko DDoS izvira iz več sistemov (je tudi hitrejši in ga je težje preprečiti) (CrowdStrike, b. d.). </div>
+				</div>
+			</div>
+			<div class="Kvadrat_s_sliko">
+				<img src="/slike/G_MITM.jpg" alt="Man-in-the-Middle" class="Slika_z_napisom">
+				<div class="overlay">
+					<div class="Tekst_čez_sliko"><p class="Naslov_groznje">MAN-IN-THE-MIDDLE</p>
+						Pri temu napadu napadalec prisluškuje pogovoru med dvema ciljnima osebama z namenom zbiranja osebnih podatkov, gesel ali bančnih podatkov in/ali prepričevanja žrtve, da izvede dejanje, kot je 
+						sprememba podatkov za prijavo, dokončanje transakcije ali začetek prenosa denarja (CrowdStrike, b. d.).</div>
+				</div>
+			</div>
+			<div class="Kvadrat_s_sliko">
+				<img src="/slike/G_SQL_Injection.jpg" alt="SQL Injection" class="Slika_z_napisom">
+				<div class="overlay">
+					<div class="Tekst_čez_sliko"><p class="Naslov_groznje">SQL INJECTION</p>
+						Izkorišča ranljivost v sistemu, da v podatkovno aplikacijo vstavi zlonamerne SQL ukaze. S tem lahko napadalec pridobi podatke iz baze. Hekerji uporabljajo to tehniko, da spremenijo, ukradejo ali 
+						izbrišejo podatke iz baze (CrowdStrike, b. d.).</div>
+				</div>
+			</div>
+			<div class="Kvadrat_s_sliko">
+				<img src="/slike/G_Brute_force.jpg" alt="Brute force" class="Slika_z_napisom">
+				<div class="overlay">
+					<div class="Tekst_čez_sliko"><p class="Naslov_groznje">BRUTE FORCE</p>
+						Napad z grobo silo uporablja metodo poskušanja različnih možnosti, da sistematično ugane prijavne podatke, gesla ali šifrirne ključe. Napadalec vpisuje različne kombinacije uporabniških imen 
+						in gesel, dokler mu ne uspe najti prave (CrowdStrike, b. d.).</div>
+				</div>
+			</div>
+			<div class="Kvadrat_s_sliko">
+				<img src="/slike/G_Zero_day.jpg" alt="Zero-day" class="Slika_z_napisom">
+				<div class="overlay">
+					<div class="Tekst_čez_sliko"><p class="Naslov_groznje">ZERO-DAY</p>
+						Gre za resne varnostne grožnje z visokimi stopnjami uspeha, saj podjetja nimajo pripravljenih obrambnih ukrepov za njihovo zaznavanje ali preprečevanje. Zgodi se, preden je ciljna stran sploh seznanjena 
+						z obstojem ranljivosti. Začne se tako, da heker odkrije zero-day ranljivost, torej napako v kodi ali programksi opremi, ki je ciljna stran še ni odkrila (Fortinet, b. d.).</div>
+				</div>
+			</div>
+			</div>
+		<p style="text-align: center;">(Vsi slike so pridobljene iz Canve.)</p>
+		</p>
+		
+	<h3 id="primeri" class="Prvi_naslov">Znani primeri</h3>
+
+	<!--Vsak primer v svojem pravokotniku-->
+	<div class="Okvir_za_znane_primere"><h4 class="Naslov_za_znane_primere">ILOVEYOU</h4>
+		<p><span style="font-weight: bold; letter-spacing: 2px;">Leto:</span> 2000<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Vrsta:</span> Virus<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Opis:</span> Virus, znan tudi kot "loveletter" je bil izjemno uničujoč virus, ki se je širil preko e-pošte. Sporočilo z naslovom "ILOVEYOU" je vsebovalo priponko "LOVE-LETTER-FOR-YOU.txt.vbs", ki je ob odprtju sprožila 
+			zlonamerno kodo. V manj kot 24 urah je okužil milijone računalnikov po vsem svetu, uničil podatke in povzročil ogromno škodo. Avtorja sta bila Onel de Guzman in Reomel Ramones s Filipinov (Awati, 2021).</p>
+	</div>
+
+	<div class="Okvir_za_znane_primere"><h4 class="Naslov_za_znane_primere">MAFIABOY</h4>
+		<p><span style="font-weight: bold; letter-spacing: 2px;">Leto:</span> 2000<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Vrsta:</span> DDoS<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Opis:</span> Srednješolec Michael Calce, znan tudi kot MafiaBoy, je paraliziral spletne strani e-trgovine in medijske velikane, vključno z eBay, Amazon, CNN, Dell in Yahoo, 
+			z vrsto napadov zavrnitve storitve (DDoS). Lahko je izvedel napade DDoS z uporabo univerzitetnih omrežij, da bi preobremenil zunanja spletna mesta s prometom, tako da je samo kliknil enter na tipkovnici. Michael je sprožil prvi napad DDoS s svojim orodjem na Yahoo!. 
+			Napad je bil del serije napadov pod projektnim imenom Rivolta, kar v italijanščini pomeni "vstaja". Takrat je bil Yahoo! več milijard dolarjev vredno podjetje in najboljši iskalnik. Uspelo mu je zapreti njihovo spletno stran za eno uro. Naslednji dan je sprožil napad na 
+			eBay, ki je padel močneje in hitreje kot Yahoo!. Uspel mu je zapreti tudi CNN, nekaj dni kasneje pa je uničil tudi Dellovo spletno stran. Napadel je tudi Amazon.com v naslednjem tednu in ga precej enostavno odstranil (Hersher, 2015).</p>
+	</div>
+
+	<div class="Okvir_za_znane_primere"><h4 class="Naslov_za_znane_primere">ZEUS</h4>
+		<p><span style="font-weight: bold; letter-spacing: 2px;">Leto:</span> 2007<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Vrsta:</span> Trojanski konj<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Opis:</span> Specializiran je za krajo bančnih podatkov in gesel. Razvil ga je neznani heker. Širil se je predvsem prek phishing e-mailov in okuženih spletnih strani. Leta 2011 je bila razkrita njegova 
+			izvorna koda, kar pomeni, da je lahko vsakdo ustvaril svojo različico. To je sprožilo val novih različic trojancev (CrowdStrike, 2023). </p>
+	</div>
+
+	<div class="Okvir_za_znane_primere"><h4 class="Naslov_za_znane_primere">NAPAD NA HEARTLAND PAYMENT SYSTEMS</h4>
+		<p><span style="font-weight: bold; letter-spacing: 2px;">Leto:</span> 2008<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Vrsta:</span> SQL Injection<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Opis:</span> Podjetje Heartland Payment Systems, specializirano za plačilne, POS in plačne sisteme, je takrat doživelo obsedež vdor v podatke. Napad je zlorabil računalnike za obdelvo plačil. Napadalci 
+			so dostopali do spletne prijavne strani in zbrali dovolj podatkov, da so lahko ustvarili nove fizične kreditne kartice. Do 100 milijonov kreditnih in debetnih kartic je bilo razkritih (Twingate Team, 2024).</p>
+	</div>
+
+	<div class="Okvir_za_znane_primere"><h4 class="Naslov_za_znane_primere">STUXNET</h4>
+		<p><span style="font-weight: bold; letter-spacing: 2px;">Leto:</span> 2010<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Vrsta:</span> Črv<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Opis:</span> To je primer prvega znanega računalniškega črva, ki je uspešno napadel fizično industrijsko infrastrukturo. Razvili sta ga ZDA in Izrael v okviru tajne operacije za upočasnitev iranskega jedrskega 
+			programa. Napadal je Siemensove naprave v obratu za bogatenje urana in povzročil okvare centrifug. Prenašal se je prek USB ključev (Fruhlinger, 2022).</p>
+	</div>
+
+	<div class="Okvir_za_znane_primere"><h4 class="Naslov_za_znane_primere">COMODO NAPAD</h4>
+		<p><span style="font-weight: bold; letter-spacing: 2px;">Leto:</span> 2011<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Vrsta:</span> Man-in-the-Middle<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Opis:</span> Napadalec je uspel pridobiti devet lažnih digitalnih certifikatov za znana spletna mesta, kot so Google, Yahoo, Skype, ... To mu je uspelo prek podjetja, ki je sodelovalo s Comodom. 
+			Z lažnimi certifikati bi lahko uporabnike pretental, da mislijo, da obiskujejo varne strani, čeprav jih spremlja napadalec. Napad je poudaril ranljivost sistema zaupanja, kjer ena napaka pri izdajatelju certifikatov ogrozi celoten spletni ekosistem (Grimes, 2011).</p>
+	</div>
+
+	<div class="Okvir_za_znane_primere"><h4 class="Naslov_za_znane_primere">NAPAD NA LINKEDLN</h4>
+		<p><span style="font-weight: bold; letter-spacing: 2px;">Leto:</span> 2012<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Vrsta:</span> Brute force<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Opis:</span> Linkedln je doživel velik vdor, pri katerem je bilo ukradenih okoli 6,5 milijona uporabniških računov. Leta 2016 so na spletu našli podatke kar 117 milijonov računov, povezanih s tem vdornim napadom. 
+			Hekerji so pridobili shranjena gesla, ki takrat še niso imela dodatne zaščite. Zaradi tega so lahko z uporabo predhodno pripravljenih tabel razvozljali številna gesla in pridobili dostop do računov uporabnikov, ki niso zamenjali gesla po vdoru (Toulas, 2023).
+	</div>
+
+	<div class="Okvir_za_znane_primere"><h4 class="Naslov_za_znane_primere">SONY-PICTURES</h4>
+		<p><span style="font-weight: bold; letter-spacing: 2px;">Leto:</span> 2014<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Vrsta:</span> Zero-day<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Opis:</span> Hekerji so izkoristili neznano ranljivost, s čimer so vdrli v Sonyjev računalniški sistem. Kot posledica tega vdora so na splet prišle občutljive informacije, kot so načrti podjetja, podatki o prihajajočih 
+			filmih in osebnih e-naslovih vodilnih zaposlenih. Ta napad je močno prizadel Sony (Lee & St. James, 2015).</p>
+	</div>
+
+	<div class="Okvir_za_znane_primere"><h4 class="Naslov_za_znane_primere">NAPAD NA JOHNA PODESTO</h4>
+		<p><span style="font-weight: bold; letter-spacing: 2px;">Leto:</span> 2016<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Vrsta:</span> Phishing<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Opis:</span> Ruska hekerska skupina Fancy Bear je izvedla napad na svetovalca kampanje Hillary Clinton, Johna Podesto. Hekerji so uporabili posebno obliko ribarjenja, imenovano spear phishing, kjer napadalec pošlje zelo 
+			prepričljivo in osebno ciljno elektronsko sporočilo. Sporočilo je vsebovalo povezavo do ponarejene spletne strani, kjer naj bi spremenilo geslo. Njegova e-pošta je nato pristala na Wikileaksu (Murnane, 2016).</p>
+	</div>
+
+	<div class="Okvir_za_znane_primere"><h4 class="Naslov_za_znane_primere">FIREBALL</h4>
+		<p><span style="font-weight: bold; letter-spacing: 2px;">Leto:</span> 2017<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Vrsta:</span> Adware<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Opis:</span> To nevarno oglaševalsko programsko opremo je zaznalo podjetje Trend Micro. Razširjena je po vsem svetu, okuženih je kar 20% poslovnih omrežij. Na računalnik pride preko drugih zlonamernih programov ali 
+			nezavednim prenosom s spletnih strani. Samodejno se zažene vsakih 60 minut in preusmeri uporabnike na lažne iskalnike za ustvarjanje dobička s prikazovanjem oglasov (Trend Micro, 2017).</p>
+	</div>
+
+	<div class="Okvir_za_znane_primere"><h4 class="Naslov_za_znane_primere">WANNACRY</h4>
+		<p><span style="font-weight: bold; letter-spacing: 2px;">Leto:</span> 2017<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Vrsta:</span> Ransomware<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Opis:</span> Je kriptovirus, ki zaklene ali šifrira datoteke na računalniku in zahteva odkupnino v Bitcoinih. Ciljal je predvsem na računalnike z operacijskim sistemom Microsoft Windows. Napad se je razširil po vsem svetu 
+			z uporabo ranljivosti, imenovane EternalBlue, ki jo je razkrila hekerska skupina Shadow Brokers. Microsoft je za to ranljivost izdal popravek že dva meseca pred napadom, a številni uporabniki sistema niso posodobili (Kaspersky, b. d.).</p>
+	</div>
+
+	<div class="Okvir_za_znane_primere"><h4 class="Naslov_za_znane_primere">PEGASUS</h4>
+		<p><span style="font-weight: bold; letter-spacing: 2px;">Leto:</span> 2021<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Vrsta:</span> Spyware<br>
+			<span style="font-weight: bold; letter-spacing: 2px;">Opis:</span> Največji in najbolj odmeven napad s Pegasusom je bil v okviru projekta Pegasus Projecta. Ta raziskovalni projekt je razkril več kot 50.000 telefonskih številk tarč po vsem svetu. Med tarčami so bili novinarji, 
+			politiki, aktivisti, odvetniki, ... Med najbolj odmevnimi je bil nadzor nad telefonom Jamala Khashoggija, saudskega novinarja, ki so ga ubili, ter vohunski napadi na svetovne voditelje, kot so francoski predsednik Emmanuel Macron in drugi. Ta množična vohunska kampanja je 
+			pokazala, kako široko in nevarno se uporablja Pegasus za kršenje zasebnosti in človekovih pravic po svetu (Sarkar, 2021).</p>
+	</div>	
+	</main>
+		
+</body>
+<footer>
+	<!--Dodaj nogo-->
+	<p> © 2025 Ana Blatnik. Vse pravice pridržane.</p>
+</footer>
+</html>

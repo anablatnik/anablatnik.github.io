@@ -1,0 +1,530 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+/*vsebina naj bo malo odmaknjena od roba*/
+main{
+    padding: 20px;
+    flex: 1;
+}
+
+/*del, kjer je logo in naslov in noga*/
+header, footer{
+    background-color: #E0E0E0;
+    width: 100%;
+    color: #1f2937;
+    text-align: center;
+}
+
+
+/*vse ostalo*/
+body{
+    font-family: "Lora", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #1f2937;
+    color: #E0E0E0;
+    
+}
+
+/*naslovi*/
+h1, h2, h3, h4 {
+    font-family: "Ubuntu", sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    letter-spacing: 2px;
+    text-shadow: 3px 2px 0px #080808;
+}
+
+h3{
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+h4{
+    font-size: 20px;
+    text-align: center;
+    color: #96d9ff;
+    letter-spacing: 2px;
+
+}
+
+/*manj razmika kot h3*/
+.Prvi_naslov{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/*naslov pri okvirju z zanimivimi dejstvi*/
+.Nekaj_zanimivega{
+    border-bottom:  2px dashed #96d9ff;  
+    margin-top: 0px;  
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: #96d9ff;
+    text-shadow: 3px 2px 3px #080808;
+}
+
+/*odstavek*/
+p{
+    margin-bottom: 1.5em;
+    padding-right: 20px;
+}
+
+/*pod sliko se vse poenastavi*/
+.Besedilo_pod_sliko{
+    clear: both;
+}
+
+
+/*ORODNA VRSTICA IN PODMENIJI*/
+    /*celoten meni; samo pravokotnik*/
+    .navigacija{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #006caa;
+        
+    }
+
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #006caa; 
+        border-bottom: 2px solid #E0E0E0;
+        display: flex;
+        justify-content: center; 
+        height: 40px;
+        align-items: center;
+    } 
+    
+    nav li{
+        text-align: center;
+    }
+
+    /* glavni meni; orodna vrstica*/
+    nav li a{
+        font-family: "Lora", serif;
+        font-size: 20px;
+        display: block;
+        color: #E0E0E0;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+        height: 40px;
+        line-height: 20px;
+        box-sizing: border-box;
+    }
+
+
+    /*ob miški se ozadje posamezne teme spremeni*/
+    nav li a:hover, .dropdown:hover .dropbtn{
+        background-color: #006096;
+
+    }
+    
+
+/*gumb znotraj menija*/
+    .dropbtn {
+        font-family: "Lora", serif;
+        font-size: 20px;
+        background-color: #006caa;
+        color: #E0E0E0;
+        padding: 0 16px;
+        border: none;
+        cursor: pointer;
+        height: 40px;
+        box-sizing: border-box;
+
+       
+        
+    }
+
+    nav li.dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+/*podmeni*/
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        left: 50%;
+        white-space: nowrap;
+        transform: translateX(-50%);
+        background-color: #afafaf;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px #080808;
+        z-index: 1;
+    }
+
+/*povezave podmenija*/
+    .dropdown-content a {
+        color: #1f2937;
+        letter-spacing: 0.5px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #9c9c9c;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:active {
+        transform: translateY(4px); /* ob kliku malo poskoči*/
+    }
+
+
+/*animacija ob prehodu*/
+    nav li a, .dropbtn{
+        transition: background-color 0.3s ease-in-out;
+    }
+
+
+/*logotip in naslov v headerju*/
+    .logotip_naslov {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        gap: 20px;
+        padding: 20px;
+      }
+      
+    .logotip_naslov img {
+        height: 100px;
+      }
+
+    
+/* seznami*/
+.Alineje_index {
+    padding-left: 600px;
+    margin-top:0 !important; /*nujno 0 margin-top, da ni razmaka*/
+}
+
+/*skoraj nič razmaka med odstavkom nad alinejami in alinejami*/
+.Odstavek_pred_seznamom {
+    margin-bottom: 5px;
+}
+
+
+/*zanimiva dejstva; okvir*/
+.Okvir_zanimiva_dejstva{
+    width: 1200px;
+    margin: 0px auto 15px auto;        
+    padding: 30px;
+}
+
+
+/*Slike*/
+.zacetna_slika_viri{
+    float: left;
+    margin-right: 20px;
+    border-style: groove;
+    border-color:#E0E0E0;
+    position: relative;
+
+}
+
+/*slike, ki so brez ozadja*/
+.zacetna_slika_viri_brez_borderja {
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+/*slike, ki so brez ozadja na desni*/
+.zacetna_slika_viri_brez_borderja_desna {
+    float: right;
+    margin-right: 20px;
+    position: relative;
+}
+
+.zacetna_slika{
+    display: block;
+}
+
+
+/*ko greš na sliko, se prikaže vir*/
+.overlay_viri{
+position: absolute; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  justify-content: center;
+  box-sizing: border-box;
+  background: rgba(224, 224, 224, 0.9);
+  color: #1f2937; 
+  transition: .5s ease;
+  opacity:0;
+  font-size: 18px;
+  padding: 5px;
+  text-align: center;
+
+
+}
+
+
+/*vir se dejansko ob hoverju prikaže*/
+.zacetna_slika_viri:hover .overlay_viri, .zacetna_slika_viri_brez_borderja:hover .overlay_viri, .zacetna_slika_viri_brez_borderja_desna:hover .overlay_viri{
+    opacity: 1;
+}
+
+
+
+/*barve linkov so drugačne kot original barve*/
+.zacetna_slika_viri a, .zacetna_slika_viri_brez_borderja a, .zacetna_slika_viri_brez_borderja_desna a{
+        color: #1f2937;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+
+
+
+
+
+/*SLIKE OB ZANIMIVIH DEJSTVIH-SREDNJI PRAVOKOTNIK; vse kar je med header in footer*/
+.Slika_ob_dejstvu_leva, .Slika_ob_dejstvu_desna{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px groove #E0E0E0;
+}
+
+.Slika_ob_dejstvu_leva{
+    margin-left: 50px;
+}
+
+.Slika_ob_dejstvu_desna{
+    margin-right: 50px;
+}
+
+
+.Slika_dejstva{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    margin-bottom: 10px;
+    
+}
+
+.Odstavek_zraven_slike_leva{
+    margin-right: 225px;
+    text-align: justify;
+    flex: 1;
+}
+
+.Odstavek_zraven_slike_desna{
+    margin-left: 225px;
+    flex: 1;
+    text-align: justify;
+}
+
+.Okvir_zanimiva_dejstva{
+    background-color: #2d3c50;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px auto;
+    width: 90%;
+
+}
+
+/*OSNOVNO O RAČUNALNIŠKI VARNOSTI*/
+.Več_stolpcev_osnovno_o_računalniški_varnosti {
+    display: flex;
+    gap:40px;
+    justify-content: center;
+    text-align: justify;
+    
+}
+
+.Posamezen_stolpec{
+    flex: 1;
+    min-width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Kvadrat_z_besedilom {
+    width: 310px;
+    height: 245px;
+    background-color: #96d9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    color: #1f2937;
+    text-align: center;
+}
+
+/*GROŽNJE; SLIKE OKVIRJI Z NAPISOM*/
+.Slike_overlay {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.Kvadrat_s_sliko {
+    position: relative;
+    width: 20%;
+    margin-bottom: 100px;
+}
+
+.Kvadrat_s_sliko:first-child{
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 50px;
+    
+}
+
+/*od 2. do 7. slike*/
+.Kvadrat_s_sliko:nth-child(n+2):nth-child(-n+7) {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*slika 8 in 11*/
+.Kvadrat_s_sliko:nth-child(8), .Kvadrat_s_sliko:nth-child(11){
+    margin-left: 150px;
+} 
+
+
+/*slika 10 in 13*/
+.Kvadrat_s_sliko:nth-child(10), .Kvadrat_s_sliko:nth-child(13){
+    margin-right: 150px;
+}
+
+
+/*od 11. slike naprej*/
+.Kvadrat_s_sliko:nth-child(n+11) {
+    margin-bottom: 30px ;
+}
+
+.Slika_z_napisom {
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+/*napis čez slike*/
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #96d9ff;
+    overflow-y: auto;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+.Kvadrat_s_sliko:hover .overlay {
+    height: 100%;
+}
+
+.Tekst_čez_sliko {
+    white-space: normal;
+    text-align: center;
+    padding: 10px;
+    color: #1f2937;
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform:none;
+    font-size: 16px;
+    max-height: 100%;
+    width: 100%;
+
+
+}
+
+.Naslov_groznje{
+    text-align: center ;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 1px 3px #E0E0E0;
+    padding-left: 20px;
+    
+}
+
+.Okvir_za_znane_primere{
+    border: 2px solid;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.Naslov_za_znane_primere{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+    
+}
+
+
+/* ZAŠČITA */
+.h4_pri_zasciti_orodja{
+    text-align: left;
+    margin-bottom: 0 !important;
+    margin-top: 50px;
+}
+
+.h4_pri_zasciti_orodja + p {
+    margin-top: 0;
+}
+
+
+
+a.link_zascita{
+    color:#96d9ff;
+    text-decoration: none;
+}
+
+
+/*ETIKA*/
+.etika_hekerji{
+    margin-top: 0px
+}
+

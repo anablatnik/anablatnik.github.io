@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang = "sl">
+<head>
+	<!--Dodaj še link do CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--Ikone-->
+	<link rel="stylesheet" href="/css/stil.css"> <!--CSS-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora"> <!--Pisava-->
+	<title>Računalniška varnost</title>
+</head>
+<body>
+   <header>
+		<div class="logotip_naslov">
+			<a href="index.html">
+			<img src="/slike/pravi_logotip.png" alt="Logotip" height="140px">
+			</a>
+			<h1>Računalniška varnost</h1>
+		</div>
+	</header>
+   <!--Dodaj še linke do podstrani---->
+   <nav class = "navigacija">
+		<ul>
+   			<li><a href="index.html">Domov</a></li>
+			<!--Podmeni za računalniško varnost-->
+			<li class="dropdown">
+				<button onclick="window.location.href='osnovno_o_racunalniski_varnosti.html'" class="dropbtn">Osnovno o računalniški varnosti</button> <!--Tudi klik na računalniško varnost pripelje do začetka podstrani-->
+				<div class="dropdown-content">
+					<a href="osnovno_o_racunalniski_varnosti.html#definicija">Kaj je računalniška varnost?</a>
+					<a href="osnovno_o_racunalniski_varnosti.html#pomen">Pomen računalniške varnosti</a>
+				</div>
+			</li>
+			<!--Podmeni za grožnje-->
+			<li class="dropdown">
+				<button onclick="window.location.href='groznje.html'" class="dropbtn">Grožnje</button>
+				<div class="dropdown-content">
+					<a href="groznje.html#vrste">Vrste groženj</a>
+					<a href="groznje.html#primeri">Znani primeri</a>
+				</div>
+			</li>
+			<!--Podmeni za zaščito-->
+			<li class="dropdown">
+				<button onclick="window.location.href='zascita.html'" class="dropbtn">Zaščita</button>
+				<div class="dropdown-content">
+					<a href="zascita.html#orodja">Orodja</a>
+					<a href="zascita.html#koraki">Temeljni koraki</a>
+				</div>
+			</li>
+			<!--Podmeni za etiko-->
+			<li><a href="etika.html">Etika</a></li>
+			<!--Meni za izobraževanje-->
+			<li><a href="izobrazevanje.html">Izobraževanje</a></li>
+			<!--Meni o projektu-->
+			<li><a href="o_projektu.html">O projektu</a></li>
+			<!--Meni viri-->
+			<li><a href="viri.html">Viri</a></li>
+		</ul>
+	</nav>
+<main>
+	<h2>Zaščita</h2>
+	
+	<p>Če bi danes na mail dobil sporočilo, ki od tebe zahteva, da klikneš povezavo in se prijaviš z geslom ter vpišeš svoje osebne podatke – bi jih vpisal ali ne? 
+		Ali bi znal prepoznati, ali gre za resnično ali lažno sporočilo?</p>
+	<p  class="Odstavek_pred_seznamom">Na sliki spodaj lahko vidiš primer dveh e-poštnih sporočil; eno sporočilo je past, drugo pa resnično in varno. Med njima lahko opaziš kar nekaj razlik. Najbolj 
+		ključne stvari, ki jih vsebuje phishing e-pošta, so:</p>
+		<div class="zacetna_slika_viri_brez_borderja">
+		<img class="zacetna_slika" src="/slike/phishing_primer.png" alt="Primer phishing e-pošte" style="width: 800px; padding-right: 30px; float: left">
+		<div class="overlay_viri"><a href="https://creativecommons.org">Primer phishing in prave e-pošte</a> © 2025 by <a href="https://creativecommons.org">Ana Blatnik</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"></div>
+		</div>
+		<ul class="Alineje_index" style="padding-left: 0px !important; padding-top: 30px;"> <!--Alineje ob sliki-->
+			<li><span style="font-weight: bold; letter-spacing: 1.5px; color:#96d9ff">Splošni pozdravi</span><br>
+			E-poštna sporočila, ki se običajno začnejo brez vašega polnega imena, lahko kažejo na poskus množičnega lažnega predstavljanja.</li>
+			<li><span style="font-weight: bold; letter-spacing: 1.5px; color:#96d9ff">Nujni ali grozeči jezik</span><br>
+				Prevaranti običajno poskušajo ustvariti paniko z besedami, da imate 24 ur za ukrepanje. Ta nujnost vas spodbuja k prenagljenim odločitvam.</li>
+			<li><span style="font-weight: bold; letter-spacing: 1.5px; color:#96d9ff">Sumljive povezave</span><br>
+				Pred klikom aktivno premaknite kazalec miške nad povezave. Če se prikazani URL ne ujema z dejanskim ciljem ali je domena napačno črkovana, napadalci vrjetno poskušajo prevaro 
+				z lažnim predstavljanjem.</li>
+			<li><span style="font-weight: bold; letter-spacing: 1.5px; color:#96d9ff">Slaba slovnica in tiskarske napake</span><br>
+				Napadalci običajno napačno črkujejo besede, uporabljajo nerodne izraze ali nedosledno oblikujejo svoja e-poštna sporočila.</li>
+			<li><span style="font-weight: bold; letter-spacing: 1.5px; color:#96d9ff">Zahteve za občutljive podatke</span><br>
+				Bodite previdni, če e-poštno sporočilo zahteva vaše podatke za prijavo, podatke o plačilu ali varnostne kode (Cofense, 2023).</li>
+		</ul>
+
+
+
+	<h3 id="orodja">Orodja</h3>
+	<p>Orodja za računalniško varnost so ključnega pomena za vsako organizacijo, saj pomagajo zaščititi vse vrste podatkov pred kršitvami in izgubo podatkov. Različne vrste orodij so prilagojene za 
+		preprečitev določenih groženj. Nekatera najbolj priljubljena orodja za kibernetsko varnost so:</p>
+	<div class="zacetna_slika_viri_brez_borderja_desna">
+		<img src="/slike/orodja.png" alt="Orodja za računalniško varnost" style="width: 700px; float: right;">
+		<div class="overlay_viri"><a href="https://creativecommons.org">Orodja za računalniško varnost</a> © 2025 by <a href="https://creativecommons.org">Ana Blatnik</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"></div>
+	</div>
+				
+
+	<h4 class="h4_pri_zasciti_orodja">Orodja za šifriranje</h4>
+	<p>Zaščitijo podatke pred krajo, spremembo ali zlorabo. Delujejo tako, da podatke pretvorijo v skrivno kodo, ki jo je mogoče odkleniti le z unikatnim digitalnim ključem.</p>
+		
+	<h4 class="h4_pri_zasciti_orodja">Požarni zidovi</h4>
+	<p>Preprečujejo nepooblaščenim uporabnikom dostop do internetnega omrežja podjetja in jih je mogoče namestiti kot strojno opremo, programsko opremo ali kot kombinacijo obeh.</p>
+		
+	<h4 class="h4_pri_zasciti_orodja">Dvofaktorsko preverjanje pristnosti (2FA)</h4>
+	<p>Povečuje verjetnost, da je oseba tisto, za kar pravi, da je. Postopek od uporabnika zahteva, da zagotovi dva različna dejavnika preverjanja pristnosti, preden lahko dostopajo do aplikacije ali sistema, 
+		namesto le uporabniškega imena in gesla.</p>
+	
+	<h4 class="h4_pri_zasciti_orodja">Navidezno zasebno omrežje (VPN)</h4>
+	<p>Ustvarja varno, šifrirano povezavo prek interneta, ki uporabniku omogoča oddaljen dostop do zasebnega omrežja. Ščiti podatke pred prestrezanjem s šifriranjem med prenosom.</p>
+	
+	<h4 class="h4_pri_zasciti_orodja">Prestrezalnik paketov (packet sniffers)</h4>
+	<p>Orodje, ki se uporablja za nadzor omrežnega prometa. Pregleduje podatkovne pakete, ki se prenašajo med računalniki v omrežju ali med povezanimi napravami. Čeprav jih hekerji pogosto uporabljajo za nezakonito 
+		zbiranje informacij o omrežju, jih uporabljajo tudi ponudniki internetnih storitev, oglaševalci in vlade.</p>
+		
+	<h4 class="h4_pri_zasciti_orodja">Antivirusna programska oprema</h4>
+	<p>Namenjena pregledovanju, preprečevanju in odstranjevanju virusov iz računalnika. Po namestitvi se večina protivirusnih programov samodejno zažene v ozadju in zagotavlja sprotno zaščito.</p>
+
+	<h4 class="h4_pri_zasciti_orodja">Orodja za nadzor omrežne varnosti</h4>
+	<p>So ključna za spremljanje vsega prometa, ki poteka preko vašega omrežja. Pomagajo zaznati morebitne težave in grožnje, še preden se razvijejo v resne težave. Ta orodja pošljejo takojšnje opozorilo, 
+		če zaznajo kaj nenavadnega.</p>
+	
+	<h4 class="h4_pri_zasciti_orodja">Orodja za preverjanje varnostne skladnosti</h4>
+	<p>Pregledujejo omrežja, orodja in procese ter jih ocenjujejo glede na zahteve zakonskih in varnostnih standardov. Zaznajo dejavnost, ki ni skladna s predpisi, in varnostne napake, ter o tem obvestijo 
+		skrbnike sistema, da lahko pravočasno ukrepajo.</p>
+	
+	<h4 class="h4_pri_zasciti_orodja">Orodja za zaščito brezžičnih omrežij</h4>
+	<p>Programska orodja in tehnike, ki so namenjna varovanju brezžičnih omrežij pred nepooblaščenim dostopom, napadi in ranljivostmi. Za nadzor dostopa do omrežja združujejo strojno in programsko opremo.</p>
+
+	<h4 class="h4_pri_zasciti_orodja">Infrastruktura javnih ključev</h4>
+	<p>Deluje tako, da vsakdo dobi par ključev – enega javnega (ga lahko deliš z drugimi) in enega zasebnega (ga hraniš zase). Ko nekdo pošlje podatke, jih zakodira (šifrira) s tvojim javnim ključem, in samo ti jih 
+		lahko odkodiraš s svojim zasebnim ključem. Tako se prepreči, da bi nekdo drug med prenosom prestregel in prebral podatke. Poleg tega PKI omogoča preverjanje, kdo ti je podatke res poslal – tako se izogneš 
+		prevaram ali lažnim identitetam.</p>
+
+	<p>(Sprinto, 2024).</p>
+
+
+	<h3 id="koraki">Temeljni koraki</h3>
+	<p>Danes počnemo skoraj vse prek računalnika ali drugih mobilnih naprav- se učimo, iščemo službo, naročamo stvari, plačujemo račune, se družimo s prijatelji. V naših napravah je toliko naših 
+		osebnih podatkov, zato je zaščita pred kibernetskim napadom še toliko bolj pomembna.</p>
+	<p class="Odstavek_pred_seznamom">Nekaj osnovnih nasvetov za kibernetsko varnost:
+		<ol class="Alineje_index" style="padding-left: 70px" !important;>
+			<li>Zaščitite svoje podatke</li>
+			<li>Ne odpirajte povezav in e-poštnih sporočil neznanih pošiljateljev</li>
+			<li>Oblikujte močna gesla in uporabljajte upravitelja gesel</li>
+			<li>Povežite se z varnim omrežjem Wi-Fi</li>
+			<li>Zagotovite si požarni zid</li>
+			<li>Na javnih omrežjih oporabljajte VPN</li>
+			<li>Namestite posodobitve varnoste opreme</li>
+			<li>Nikoli ne puščajte naprav brez nadzora</li>
+			<li>Namestite zaščito pred virusi</li>
+			<li>Varnostno kopirajte datoteke</li>
+			<li>Izključite glasovno vodene pametne naprave na domači delovni postaji in pokrijte spletno kamero, ko je ne uporabljate</li>
+			<li>Ne nasedajte direktorskim prevaram</li>
+		</ol>
+		<p>(CNVOS, 2023).</p>
+	<!--Povezava do nasvetov-->
+	Če te zanima več, ali želiš nasvete v obliki priročne knjižice, si jo lahko ogledaš ali preneseš na povezavi: <a href="https://s3.fr-par.scw.cloud/djnd/cnvos/filer_public/f8/14/f8146b2f-9e3f-4259-8329-a7977e656fec/knjizica_-_12_nasvetov_za_kibernetsko_varnost_pri_delu.pdf" target="_blank" class="link_zascita"> 12 nasvetov za kibernetsko varnost pri delu</a></p>
+</main>
+</body>
+<footer>
+	<!--Dodaj nogo-->
+	<p> © 2025 Ana Blatnik. Vse pravice pridržane.</p>
+</footer>
+</html>
